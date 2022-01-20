@@ -1,15 +1,8 @@
-import SignIn from 'pages/signin';
-import SignUp from 'pages/signup';
-import React from "react";
+import EntryWall from 'pages/entry-wall'
+import React from 'react'
 
-function App() {
+export default function App() {
     return (
-        <div>
-            <p>Hello World!</p>
-            <SignIn />
-            <SignUp />
-        </div>
+        <EntryWall />
     )
 }
-
-export default App;

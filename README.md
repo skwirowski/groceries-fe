@@ -10,3 +10,10 @@ I really don't like the shopping lists applications I used don't have live updat
 - usage of firebase for data storage, logging, hosting etc.
 - react js as front-end building tool
 - more soon during the development
+
+## Technology
+
+- [React](https://pl.reactjs.org/) web application
+- [Create React App](https://create-react-app.dev/) boilerplate with TypeScript support
+- [Firebase](https://firebase.google.com/) integration
+- [MUI](https://mui.com/) design library
