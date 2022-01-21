@@ -1,6 +1,7 @@
 import { AccountCircle } from "@mui/icons-material";
 import {
   FormControl,
+  Grid,
   InputAdornment,
   InputLabel,
   OutlinedInput,
@@ -15,18 +16,21 @@ export default function InputEmail({ onEmailChange }: Props) {
     onEmailChange(event.target.value);
 
   return (
-    <FormControl variant="outlined" fullWidth>
-      <InputLabel htmlFor="outlined-input-email">Email</InputLabel>
-      <OutlinedInput
-        id="outlined-input-email"
-        type="text"
-        onChange={handleChange}
-        endAdornment={
-          <InputAdornment position="end">
-            <AccountCircle />
-          </InputAdornment>
-        }
-      />
-    </FormControl>
+    <Grid item xs={12}>
+      <FormControl variant="outlined" fullWidth>
+        <InputLabel htmlFor="outlined-input-email">Email</InputLabel>
+        <OutlinedInput
+          id="outlined-input-email"
+          type="text"
+          onChange={handleChange}
+          endAdornment={
+            <InputAdornment position="end" sx={{ p: 1 }}>
+              <AccountCircle />
+            </InputAdornment>
+          }
+          label="Email"
+        />
+      </FormControl>
+    </Grid>
   );
 }

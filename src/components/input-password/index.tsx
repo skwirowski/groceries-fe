@@ -1,6 +1,7 @@
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import {
   FormControl,
+  Grid,
   IconButton,
   InputAdornment,
   InputLabel,
@@ -36,26 +37,27 @@ export default function InputPassword({ onPasswordChange }: Props) {
   };
 
   return (
-    <FormControl variant="outlined" fullWidth>
-      <InputLabel htmlFor="outlined-input-password">Password</InputLabel>
-      <OutlinedInput
-        id="outlined-input-password"
-        type={values.showPassword ? "text" : "password"}
-        onChange={handleChange}
-        endAdornment={
-          <InputAdornment position="end">
-            <IconButton
-              aria-label="toggle password visibility"
-              onClick={handleClickShowPassword}
-              onMouseDown={handleMouseDownPassword}
-              edge="end"
-            >
-              {values.showPassword ? <VisibilityOff /> : <Visibility />}
-            </IconButton>
-          </InputAdornment>
-        }
-        label="Password"
-      />
-    </FormControl>
+    <Grid item xs={12}>
+      <FormControl variant="outlined" fullWidth>
+        <InputLabel htmlFor="outlined-input-password">Password</InputLabel>
+        <OutlinedInput
+          id="outlined-input-password"
+          type={values.showPassword ? "text" : "password"}
+          onChange={handleChange}
+          endAdornment={
+            <InputAdornment position="end">
+              <IconButton
+                aria-label="toggle password visibility"
+                onClick={handleClickShowPassword}
+                onMouseDown={handleMouseDownPassword}
+              >
+                {values.showPassword ? <VisibilityOff /> : <Visibility />}
+              </IconButton>
+            </InputAdornment>
+          }
+          label="Password"
+        />
+      </FormControl>
+    </Grid>
   );
 }

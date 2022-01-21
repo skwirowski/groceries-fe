@@ -17,3 +17,4 @@ I really don't like the shopping lists applications I used don't have live updat
 - [Create React App](https://create-react-app.dev/) boilerplate with TypeScript support
 - [Firebase](https://firebase.google.com/) integration
 - [MUI](https://mui.com/) design library
+- [Lint-staged & Husky](https://github.com/okonet/lint-staged#installation-and-setup) for git hooks
