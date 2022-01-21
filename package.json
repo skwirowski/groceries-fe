@@ -10,8 +10,8 @@
     "deploy": "npx firebase deploy",
     "compile": "npx tsc",
     "jsx-transform": "npx react-codemod update-react-imports 'src/**/*.{ts,tsx}' --force",
-    "lint": "npx eslint --fix 'src/**/*.{.ts,tsx}'",
-    "prettify": "npx prettier --write 'src/**/*.{.ts,tsx}' .prettierrc.js .eslintrc.js",
+    "lint": "npx eslint --fix --cache --max-warnings=0 'src/**/*.{.ts,tsx}'",
+    "prettify": "npx prettier --write 'src/**/*.{ts,tsx}' .prettierrc.js .eslintrc.js",
     "format": "npm run lint && npm run prettify",
     "prepare": "husky install"
   },
@@ -63,7 +63,6 @@
     "prettier": "2.5.1"
   },
   "lint-staged": {
-    "*.(ts|tsx)": "eslint --cache --fix",
-    "*.prettify": "prettier --write"
+    "*.ts?(x)": "npm run format"
   }
 }

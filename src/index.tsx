@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 import App from "./app";
 import reportWebVitals from "./reportWebVitals";
 import theme from "./theme";
-const something = "hello";
+
 ReactDOM.render(
   <StrictMode>
     <ThemeProvider theme={theme}>
