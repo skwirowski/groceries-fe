@@ -1,8 +1,5 @@
-import EntryWall from 'pages/entry-wall'
-import React from 'react'
+import EntryWall from "pages/entry-wall";
 
 export default function App() {
-    return (
-        <EntryWall />
-    )
+  return <EntryWall />;
 }
