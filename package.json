@@ -12,7 +12,8 @@
     "jsx-transform": "npx react-codemod update-react-imports 'src/**/*.{ts,tsx}' --force",
     "lint": "npx eslint --fix 'src/**/*.{.ts,tsx}'",
     "prettify": "npx prettier --write 'src/**/*.{.ts,tsx}' .prettierrc.js .eslintrc.js",
-    "format": "npm run lint && npm run prettify"
+    "format": "npm run lint && npm run prettify",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -57,6 +58,12 @@
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.28.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.2.2",
     "prettier": "2.5.1"
+  },
+  "lint-staged": {
+    "*.(ts|tsx)": "eslint --cache --fix",
+    "*.prettify": "prettier --write"
   }
 }
