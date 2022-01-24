@@ -9,6 +9,8 @@ I really don't like the shopping lists applications I used don't have live updat
 - web application
 - usage of firebase for data storage, logging, hosting etc.
 - react js as front-end building tool
+- deployed application address: https://groceries-b4c0b.web.app/
+- authentication fields validation
 - more soon during the development
 
 ## Technology
