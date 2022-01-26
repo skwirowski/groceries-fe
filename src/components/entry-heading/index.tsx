@@ -1,9 +1,12 @@
 import { Typography } from "@mui/material";
 
-export default function EntryHeading() {
+interface Props {
+  heading: string;
+}
+export default function EntryHeading(props: Props) {
   return (
     <Typography component="h1" variant="h5">
-      Sign up
+      {props.heading}
     </Typography>
   );
 }

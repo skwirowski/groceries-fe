@@ -20,7 +20,7 @@ export default function InputEmail({ onEmailChange }: Props) {
       required
       fullWidth
       sx={{
-        my: 1,
+        my: 2,
       }}
     >
       <InputLabel htmlFor="outlined-input-email">Email Address</InputLabel>
@@ -30,7 +30,6 @@ export default function InputEmail({ onEmailChange }: Props) {
         label="Email Address"
         name="email"
         autoComplete="email"
-        autoFocus
         onChange={handleChange}
         endAdornment={
           <InputAdornment position="end" sx={{ p: 1 }}>

@@ -41,7 +41,7 @@ export default function InputPassword({ onPasswordChange }: Props) {
       required
       fullWidth
       sx={{
-        my: 1,
+        my: 2,
       }}
     >
       <InputLabel htmlFor="outlined-input-password">Password</InputLabel>

@@ -7,7 +7,7 @@ export default function ButtonSubmit() {
       size="large"
       fullWidth
       sx={{
-        my: 4,
+        my: 3,
       }}
     >
       Sign up

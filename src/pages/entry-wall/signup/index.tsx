@@ -1,4 +1,5 @@
 import ButtonSubmit from "components/button-submit";
+import EntryHeading from "components/entry-heading";
 import InputEmail from "components/input-email";
 import InputPassword from "components/input-password";
 import { Fragment, useState } from "react";
@@ -22,6 +23,7 @@ export default function SignUp() {
 
   return (
     <Fragment>
+      <EntryHeading heading="Sign up" />
       <InputEmail onEmailChange={handleChange("email")} />
       <InputPassword onPasswordChange={handleChange("password")} />
       <ButtonSubmit />

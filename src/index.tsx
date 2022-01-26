@@ -1,18 +1,21 @@
 import { CssBaseline } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import { StrictMode } from "react";
-import ReactDOM from "react-dom";
+import { render } from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 import App from "./app";
 import reportWebVitals from "./reportWebVitals";
 import theme from "./theme";
 
-ReactDOM.render(
-  <StrictMode>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <App />
-    </ThemeProvider>
-  </StrictMode>,
+render(
+  <BrowserRouter>
+    <StrictMode>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <App />
+      </ThemeProvider>
+    </StrictMode>
+  </BrowserRouter>,
   document.getElementById("root")
 );
 
